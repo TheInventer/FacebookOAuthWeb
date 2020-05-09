@@ -1,18 +1,20 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="oauth.js"></script>
-  </head>
-  <body>
-    <a id="facebook-button" class="btn btn-block btn-social btn-facebook">
-      <i class="fa fa-facebook"></i> Sign in with Facebook
-    </a>
-  </body>
+ <head>
+   <title>The World's Most Interesting Infographic</title>
+   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script>
+     $(document).ready(function() {
+      $("#goButton").click(makeRequest);
+     });
+     function makeRequest() {
+       // TODO: Make authorization request
+       alert("Button clicked!");
+     }
+   </script>
+ </head>
+ <body>
+   <button id="goButton" type="button">Go!</button>
+   <div id="results"></div>
+ </body>
 </html>
